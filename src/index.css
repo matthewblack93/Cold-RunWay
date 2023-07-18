@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+body {
+  font-family: "Raleway", sans-serif;
+  color: var(--text-color);
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+:root {
+  --HeaderFont-size: 24px;
+  --NormalFont-size: 18px;
+  --font-weight-semibold: 800;
+  --font-weight-bold: 900;
+  --text-color: rgb(255, 255, 255);
+  --transitions: 400ms ease-in-out;
+  --hover-color: #d49f9f;
+  --navbar-color: #db0000;
+  --HeaderFont-size: 24px;
+  --NormalFont-size: 18px;
+  --HeaderFont-size: 24px;
+  --NormalFont-size: 18px;
+  --button-bg-color: WHITE;
+}
+[data-theme="dark"] {
+  --text-color: rgb(180, 126, 126);
+  --hover-color: #6d5d6e98;
+  --navbar-color: #393646;
+  --HeaderFont-size: 24px;
+  --NormalFont-size: 18px;
+  --button-bg-color: #d27685;
+}
+.App {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+button {
+  transition: var(--transitions);
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 7px;
+  background: var(--button-bg-color);
+  color: var(--navbar-color);
+  padding: 10px 15px;
+  font-weight: var(--font-weight-semibold);
+}
+button:hover {
+  background: none;
+  color: aliceblue;
+  border: 1px solid var(--button-bg-color);
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: var(--font-weight-semibold);
+  margin: 0px;
+  letter-spacing: 1.3;
+}
+a:hover {
+  color: var(--hover-color);
+}
+ul {
+  padding-left: 0;
+}
+ul li {
+  list-style: none;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}

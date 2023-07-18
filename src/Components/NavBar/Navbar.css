@@ -1,0 +1,86 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--navbar-color);
+  padding: 0px 2rem;
+  position: relative;
+}
+nav div {
+  box-sizing: border-box;
+  display: flex;
+  gap: 2rem;
+}
+
+nav h3 {
+  font-weight: var(--font-weight-bold);
+}
+nav .signupButton {
+  color: rgba(35, 35, 185, 0.664);
+}
+nav .signupButton:hover {
+  background-color: rgba(14, 14, 184, 0.938);
+  color: white;
+}
+.ToggleMenu {
+  display: none;
+}
+.MobileMenu {
+  position: absolute;
+  height: 400px;
+  width: 200px;
+  top: 120%;
+  display: flex;
+  transition: 100ms ease-in-out;
+  justify-content: center;
+  align-items: center;
+  right: -100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 25px 15px rgba(0, 0, 0, 0.171);
+  background-color: brown;
+}
+.MobileMenu ul.navigation-Mobile-Menu {
+  display: none;
+}
+div.Mobile-AuthButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (max-width: 860px) {
+  nav {
+    width: 100%;
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  .AuthButton {
+    display: none;
+  }
+  .ToggleMenu {
+    display: block;
+  }
+  div .showDisplaymenu {
+    right: -10px;
+    display: flex;
+    flex-direction: column;
+  }
+  button.toggleButton {
+    background-color: inherit;
+    color: white;
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .DesktopMenu {
+    display: none;
+  }
+  nav .MobileMenu ul.navigation-Mobile-Menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
